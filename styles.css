@@ -1,0 +1,490 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f4f4f4;
+    overflow-x:hidden ;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 1rem 3.5rem;
+    background: rgba(237, 7, 164, 0.899);
+    border-radius: 25PX;
+    position: fixed;
+    width: 100%;
+    
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 1 auto;
+    
+   
+       
+     
+}
+
+.brand {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+   
+    
+}
+
+.nav-links {
+    list-style: none;
+    display: flex; 
+  
+    
+}
+
+.nav-links li {
+    margin-left: 20px;
+    position: relative;
+    
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  
+   
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px; 
+   
+  
+}
+
+.burger-menu .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+  
+    
+}
+
+
+@media (max-width: 768px) {
+    .burger-menu {
+        display: flex;
+        
+    }
+
+     .nav-links {  
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+     
+   
+
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li { 
+        margin: 0; 
+        text-align: right; 
+        padding-right: 20px;
+       
+    }
+
+    .nav-links a {
+        padding: 15px 0;
+        border-top: 1px solid #444;
+        text-align: center;
+       
+    }
+
+    .dropdown-menu { 
+        position: static;
+        background-color: #444;
+    }
+
+    .dropdown.active .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu a {
+        padding: 10px;
+    }
+}
+/* Header with background image */ 
+ .header { 
+ padding-top: 30px;
+ color: rgb(8, 8, 8);
+  height: 130vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background: url('images/Freerangestock-javi_indy-212.jpg') no-repeat center center/cover;
+  width: 100%;
+
+ } 
+ .header-content {
+    margin-top: auto;
+    padding: 2rem;
+  
+    
+  }
+  
+  .header h1 {
+    color: #2c1992;
+    font-size: 3rem;
+    font-style: italic;
+    text-shadow: 5PX 5PX 10PX rgb(246, 245, 248);
+  
+  }
+  
+
+  
+  .header p {
+    font-size: 1.8rem;
+    font-style: italic;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    padding: 20px 130px;
+    color: #140663;
+  }
+  
+   .whatsapp-btn { 
+    display: inline-block;
+    margin: auto; 
+    padding: 1.5rem 1.5rem;
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-bottom: 150px;
+  }
+  .whatsapp-btn i {
+    margin-right: 0.5rem;
+  }
+  
+  .whatsapp-btn:hover {
+    background-color: #1ebd53;
+   } 
+  
+  /* Main container and content */
+  .container {
+    width: 90%;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding:30px; 
+  
+  }
+  
+  .content {
+    margin-bottom: 2rem;
+    direction: rtl;
+    text-align: right;
+ 
+    
+  }
+    .content p {
+      font-weight: 200;
+      font-style: italic;
+      font-family:Arial, Helvetica, sans-serif;
+      font-size:x-large;
+  
+  }
+  .content h2{
+   font-weight: 900;
+   font-style: italic;
+  color: #3b047f;
+  }
+  .location iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    float: left;
+    margin-bottom: 20px;
+  }
+    #brotien{
+      margin-bottom: 2rem;
+      direction: rtl;
+      text-align: right;
+     
+     
+    }
+  
+  #img_bro{
+  
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 25px;
+    float: left;
+    display: block;
+    padding: 50px 25px;
+  }
+
+
+   /* @media (max-width: 768px){  
+    #img_bro {
+        float: none;
+        margin: 0 auto;
+        padding: 20px;
+    /* } */
+
+  #brotien p {
+    font-weight: 300;
+    font-style: italic;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:x-large;
+  
+  }
+  #brotien h2{
+   font-weight: 900;
+   font-size: xx-large;
+   font-style: italic;
+   font-family:Arial, Helvetica, sans-serif ;
+   color: #3b047f;
+  }
+    
+  
+ 
+  /* hair secation */
+  .container {
+    width: 90%;
+    margin: 2rem auto;
+    max-width: 1200px;
+    width: 100%;
+    /* background-color: #e4b0d469; */
+    
+
+   
+  }
+ 
+  .gallery h2{
+    padding-top: 100px;
+    text-align: center;
+    font-weight: 900;
+    font-style: italic;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 50px;
+  }
+  
+  .gallery, .videos, .price-list {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 1rem;
+        
+  }
+  .gallery,  .videos{ 
+    background-color: #e2c7a7a9;
+  }
+
+  
+ 
+  .price-list{
+    background-color: #444;
+    color: #e88351;
+
+  }
+  .price-list h2 {
+    padding: 70px;a
+    text-align: center;
+    font-weight: 800;
+    font-style: italic;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #444;
+    color: #fcfbfb;
+  }
+  
+  .videos h2{
+    padding: 70px;
+    text-align: center;
+    font-weight: 800;
+    font-style: italic;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .gallery-grid, .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+   
+  }
+  
+  .gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+   
+  }
+  
+  .video-grid video {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .price-list table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: larger;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #444;
+    border: 5px solid rgb(248, 243, 243);
+   font-weight: bold;
+  
+    
+   
+  }
+  
+  .price-list th, .price-list td {
+    border: 5px solid #ddd;
+    padding: 1.5rem;
+   
+    
+  }
+  
+  .price-list th {
+    background-color: #f4f4f4;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:x-large;
+    font-style: italic;
+  
+  }
+  /* Footer in home */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.7);
+    }
+  
+    .nav-links li {
+      margin: 1rem 0;
+    }
+  
+    .burger {
+      display: block;
+    }
+  
+    .nav-active .nav-links {
+      display: flex;
+    }
+  }
+  .social-icons1 {
+    display: flex;
+    gap: 10px;
+    padding: left 30px;
+  
+  
+  }
+  .social-icons1 a {
+    text-decoration: none;
+    /* color: inherit; */
+    color: white;
+
+  }
+  .social-icons1 a i {
+    font-size: 30px;
+    padding:7px;
+  }
+  .social-icons1 a:hover {
+    color: #9d20abe2; 
+  }
+  /* footer */
+  .footer {
+  
+    background-color: #333;
+    color: #fff;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .footer-section {
+    margin: 10px;
+    flex: 1;
+    min-width: 200px;
+  }
+  .footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #ff6f61; /* Accent color */
+  }
+  .footer-section p, .footer-section a {
+    font-size: 14px;
+    color: #bbb;
+    text-decoration: none;
+  }
+  .footer-section a:hover {
+    color: #ff6f61; /* Accent color */
+  }
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    padding-left: 3cm;
+       
+    
+    
+  }
+  .social-icons a {
+    color: #bbb;
+    font-size: 20px;
+    
+  }
+  .social-icons a:hover {
+    color: #ff6f61; /* Accent color */
+  }
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #312f2f;
+  }
+
+
