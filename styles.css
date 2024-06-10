@@ -11,6 +11,11 @@ body {
     background-color: #f4f4f4;
     overflow-x:hidden ;
 }
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
 
 .navbar {
     display: flex;
@@ -180,6 +185,9 @@ body {
     padding: 20px 130px;
     color: #140663;
   }
+    @media (max-width: 768px) {
+    .burger-menu {
+        display: flex;
   
    .whatsapp-btn { 
     display: inline-block;
