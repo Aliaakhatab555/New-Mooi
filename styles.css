@@ -197,7 +197,7 @@ body {
         
    .whatsapp-btn { 
     display: inline-block;
-   margin: 25px;  
+/*    margin: 25px;   */
     padding: 1.5rem 1.5rem;
     background-color: #25d366;
     color: white;
