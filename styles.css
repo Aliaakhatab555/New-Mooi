@@ -161,7 +161,7 @@ body {
   text-align: center;
   background: url('images/Freerangestock-javi_indy-212.jpg') no-repeat center center/cover;
   width: 100%;
-
+  align-items: center;
  } 
  .header-content {
     margin-top: auto;
@@ -203,6 +203,8 @@ body {
     text-decoration: none;
     border-radius: 25px;
     margin-bottom: 250px;
+   margin-top: auto;
+     width: 270px;
   }
   .whatsapp-btn i {
     margin-right: 0.5rem;
