@@ -154,7 +154,7 @@ body {
  .header { 
  padding-top: 30px;
  color: rgb(8, 8, 8);
-  height: 130vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -163,9 +163,10 @@ body {
   width: 100%;
   align-items: center;
  } 
+
  .header-content {
     margin-top: auto;
-    padding: 2rem;
+    
   
     
   }
