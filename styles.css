@@ -25,12 +25,28 @@ body {
     justify-content: space-between;
     align-items: center;
     color: #fff;
-    padding: 1rem 3.5rem;
-    background: rgba(237, 7, 164, 0.899);
+    padding: 1rem 1rem;
+    background: rgba(247, 73, 200, 0.402);
     border-radius: 25PX;
     position: fixed;
     width: 100%;
+    text-align: center;
+
     
+    
+}
+.navbar .nav1 {
+  display: flex;
+  align-items: center;
+}
+
+
+.navbar img{
+  width: 45px;
+  height: 45px;
+  border-radius: 20px;
+  align-self: center;
+  
 }
 
 .navbar-container {
@@ -45,11 +61,17 @@ body {
      
 }
 
-.brand {
+.navbar .brand {
     font-size: 24px;
     text-decoration: none;
     color: #fff;
-   
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold; 
+    text-align: center;
+    align-self: center;
+    padding-left: 15px;
+    
+    
     
 }
 
@@ -69,14 +91,15 @@ body {
 .nav-links a {
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     transition: color 0.3s ease;
+    font-family:'Times New Roman', Times, serif;
   
    
 }
 
 .nav-links a:hover {
-    color: #ffd700;
+    color: #8c198a;
 }
 
 .burger-menu {
@@ -111,7 +134,7 @@ body {
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 60px;
+        top: 40px; 
         right: 0;
         background-color: #333;
      
@@ -152,9 +175,9 @@ body {
 }
 /* Header with background image */ 
  .header { 
- padding-top: 30px;
+ padding-top: 70px;
  color: rgb(8, 8, 8);
-  height: 100vh;
+  height: 100vh; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -162,20 +185,25 @@ body {
   background: url('images/Freerangestock-javi_indy-212.jpg') no-repeat center center/cover;
   width: 100%;
   align-items: center;
- } 
 
+ } 
  .header-content {
     margin-top: auto;
     
-  
-    
   }
+  @media (max-width: 768px) {
+    .header {
+        display: flex;
+      }
+    }
   
   .header h1 {
     color: #2c1992;
     font-size: 3rem;
     font-style: italic;
     text-shadow: 5PX 5PX 10PX rgb(246, 245, 248);
+    font-family:'Times New Roman', Times, serif;
+  
   
   }
   
@@ -189,23 +217,20 @@ body {
     padding: 20px 130px;
     color: #140663;
   }
-  @media (max-width: 768px) {
-    .header {
-        display: flex;
-      }
-    }
+ 
         
    .whatsapp-btn { 
     display: inline-block;
-/*    margin: 25px;   */
+     /* margin: 25px; */
     padding: 1.5rem 1.5rem;
     background-color: #25d366;
     color: white;
     text-decoration: none;
     border-radius: 25px;
-    margin-bottom: 250px;
-   margin-top: auto;
+     margin-bottom: 250px; 
+     margin-top: auto;
      width: 270px;
+     
   }
   .whatsapp-btn i {
     margin-right: 0.5rem;
@@ -429,18 +454,23 @@ body {
   }
   .social-icons1 {
     display: flex;
-    gap: 10px;
-    padding: left 30px;
-  
-  
+    gap: 7px;
+    padding:right 28px;
+    
   }
-  .social-icons1 a {
+  @media (max-width: 768px) {
+    .social-icons1 {
+      display: flex;
+      padding-right: 28px;
+    }
+  }
+   .social-icons1 a {
     text-decoration: none;
     /* color: inherit; */
     color: white;
 
   }
-  .social-icons1 a i {
+   .social-icons1 a i {
     font-size: 30px;
     padding:7px;
   }

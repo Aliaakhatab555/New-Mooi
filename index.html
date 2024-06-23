@@ -11,7 +11,11 @@
 </head>
 <body>
     <nav class="navbar">
+      <div class="nav1">
+            <img src="images/424618708_122105504210207487_3001194120255880807_n.jpg" alt="img"/>
             <a href="index.html" class="brand">Mooi Beauty Salon</a>
+          </div>
+          
         <div class="social-icons1">
             <a href="https://www.facebook.com/profile.php?id=61556224628745&mibextid=LQQJ4d" target="_blank"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.instagram.com/mooiibeautysalon?igsh=MmpkbXo1djF1bzFz" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -37,10 +41,10 @@
       
           <!-- <p>"أعيدي اكتشاف جمالك في موى بيوتي صالون – خبراء الجمال في خدمتك."</p> -->
          
-<!--       <div class="header-content"> -->
+      <!-- <div class="header-content"> -->
         <a href="https://wa.me/+201118519747" class="whatsapp-btn">Contact us on WhatsApp</a>
   
-<!--       </div> -->
+      <!-- </div> -->
     </header>
     <main class="container">
       
@@ -193,6 +197,11 @@
             <textarea id="message" name="message" rows="4" required></textarea>
 
             <button type="submit">إرسال</button>
+
+            <?php
+        // تضمين محتوى ملف PHP
+        include 'send_message.php';
+    ?>
         </form>
     </div>
   </div>
